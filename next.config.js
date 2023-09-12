@@ -12,6 +12,10 @@ const nextConfig = {
                 hostname: 'www.motorparks.co.uk',
                 pathname: '/**',
             },
+            {
+                protocol: 'https',
+                hostname: '**',
+            },
         ],
     }
 }
