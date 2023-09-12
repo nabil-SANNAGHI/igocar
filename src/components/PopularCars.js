@@ -1,7 +1,6 @@
 import React from 'react'
 import Container from './Container'
 import CardCar from './CardCar'
-// import Carsdata from '@/helpers/data'
 import { getCars } from '@/lib/api'
 export default async function PopularCars() {
     const getCarsData = await getCars()

@@ -7,7 +7,7 @@ export default function Home() {
     <main className="space-y-40 mb-40">
       <Banner />
       <Features />
-      <PopularCars />
+      {/* <PopularCars /> */}
       <Testimonials />
 
     </main>
