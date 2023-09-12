@@ -1,7 +1,5 @@
 'use client'
 import React, { useEffect, useState } from 'react'
-import Container from '@/components/Container'
-import Link from 'next/link'
 import { getCurrentUser, updateUser } from '@/lib/api'
 const initialValues = { name: "", email: "", newpassword: "", confirmpassword: "" }
 export default function Profil() {

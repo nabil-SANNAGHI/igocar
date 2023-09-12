@@ -1,13 +1,6 @@
-// 'use client'
 import React from 'react'
-// import { users } from '@/helpers/data'
 import Profiluser from '@/components/Profiluser'
 import { getUsers } from '@/lib/api'
-
-// const getUsersData = async () => {
-//     const userss = await getUsers()
-//     return { userss }
-// }
 export default async function ProfilUsers() {
     const usersData = await getUsers()
     const users = usersData.data

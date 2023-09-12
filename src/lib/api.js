@@ -54,7 +54,7 @@ export const addCar = async (car) => {
 
 export const getCars = async () => {
     return fetcher({
-        url: `${process.env.NEXT_PUBLIC_domain}/api/cars`,
+        url: `${process.env.NEXT_PUBLIC_domain}api/cars`,
         method: "GET",
         json: true
     })
