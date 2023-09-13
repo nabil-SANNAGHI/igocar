@@ -6,8 +6,8 @@ export default function CardCar({ data }) {
     const { name, rentPerDay, transmission, seatingCapacity, brand, fuelType, carImage, _id } = data
     return (
         <div className="aspect-auto p-4 border border-gray-100 rounded-3xl bg-white dark:bg-gray-800 dark:border-gray-700 shadow-2xl shadow-gray-600/10 dark:shadow-none">
-            <div className='mb-4'>
-                <Image src={carImage} alt={name} width="634" height="423"></Image>
+            <div className='mb-4 pt-[60%] relative'>
+                <Image className="absolute top-0 left-0 w-full h-full object-cover" src={carImage} alt={name} width="634" height="423"></Image>
             </div>
             <div className='flex justify-between gap-2 mb-2'>
                 <h5 className='text-xl font-semibold text-gray-700 dark:text-white'>{name}</h5>

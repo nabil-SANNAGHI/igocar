@@ -62,7 +62,7 @@ export const getCars = async () => {
 export const getCar = async (id) => {
 
     return fetcher({
-        url: `/api/cars/${id}`,
+        url: `${process.env.NEXT_PUBLIC_domain}/api/cars/${id}`,
         method: "GET",
         json: true
     })

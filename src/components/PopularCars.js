@@ -14,7 +14,7 @@ export default async function PopularCars() {
                         Our Famous Car
                     </h2>
                 </div>
-                <div className='md:columns-2 lg:columns-3 gap-8 space-y-8'>
+                <div className='grid gap-5 lg:grid-cols-3 md:grid-cols-2'>
                     {cars.map((car, key) => <CardCar data={car} key={key}></CardCar>)}
                 </div>
             </Container>
