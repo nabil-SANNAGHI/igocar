@@ -5,7 +5,6 @@ import Image from 'next/image'
 import CarResevation from '@/components/CarResevation';
 import { getCar } from '@/lib/api';
 export default async function CarInfo({ params }) {
-    // const { name, rentPerDay, transmission, seatingCapacity, brand, fuelType, carImage, id } = carsData[params.carId]
     const carData = await getCar(params.carId)
     const { name, rentPerDay, transmission, seatingCapacity, brand, fuelType, carImage, _id } = carData.data
     return (
