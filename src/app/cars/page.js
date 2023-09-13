@@ -1,10 +1,11 @@
 import React from 'react'
 import Container from '@/components/Container'
 import CardCar from '@/components/CardCar'
-import Carsdata from '@/helpers/data'
+import { getCars } from '@/lib/api'
 
-function Catalog() {
-    const cars = Carsdata
+async function Catalog() {
+    const getCarsData = await getCars()
+    const cars = getCarsData.data
     return (
         <div className='pt-32 pb-32'>
             <Container>
