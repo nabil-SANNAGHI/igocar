@@ -7,7 +7,6 @@ const fetcher = async ({ url, method, body = false, json = true }) => {
             'Content-Type': 'application/json',
         }
     })
-
     if (!res.ok) {
         throw new Error("something went wrong")
     }
@@ -104,6 +103,30 @@ export const getCurrentUser = async () => {
 export const getUsers = async () => {
     return fetcher({
         url: `${process.env.NEXT_PUBLIC_domain}api/users/getusers`,
+        method: "GET",
+        json: true
+    })
+}
+// booking
+export const bookCar = async (book) => {
+    return fetcher({
+        url: "/api/booking",
+        method: "POST",
+        body: book,
+        json: true
+    })
+}
+export const bookingConfirmation = async (id) => {
+    return fetcher({
+        url: `${process.env.NEXT_PUBLIC_domain}api/booking/${id}`,
+        method: "GET",
+        json: true
+    })
+}
+export const bookings = async (userId) => {
+
+    return fetcher({
+        url: `${process.env.NEXT_PUBLIC_domain}api/booking/?user=${userId}`,
         method: "GET",
         json: true
     })

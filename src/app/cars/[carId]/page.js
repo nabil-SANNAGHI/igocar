@@ -46,7 +46,7 @@ export default async function CarInfo({ params }) {
                             </div>
                         </div>
                         <hr className="h-px my-5  border-0 bg-primary max-w-md mx-auto"></hr>
-                        <CarResevation />
+                        <CarResevation price={rentPerDay} carId={_id} />
                     </div>
                 </div>
             </Container>

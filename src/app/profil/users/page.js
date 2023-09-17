@@ -4,7 +4,6 @@ import { getUsers } from '@/lib/api'
 export default async function ProfilUsers() {
     const usersData = await getUsers()
     const users = usersData.data
-    console.log('userss', users);
     return (
         <div>
             <table className="table-fixed w-full border border-slate-400">

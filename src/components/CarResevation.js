@@ -7,7 +7,9 @@ import 'react-date-range/dist/styles.css'; // main style file
 import 'react-date-range/dist/theme/default.css'; // theme css file
 import Link from 'next/link';
 import { useRouter } from "next/navigation";
-export default function CarResevation() {
+import moment from 'moment';
+import { bookCar } from '@/lib/api';
+export default function CarResevation({ price, carId }) {
     const [state, setState] = useState([
         {
             startDate: new Date(),
@@ -19,8 +21,15 @@ export default function CarResevation() {
     function handelChange(item) {
         setState([item.selection])
     }
-    function handelSubmit() {
-        router.push('/confirmation')
+    async function handelSubmit() {
+        const fromSlot = moment(state[0].startDate).format("YYYY/MM/DD")
+        const toSlot = moment(state[0].endDate).format("YYYY/MM/DD")
+        const totalDays = moment(toSlot.split("/")).diff(moment(fromSlot.split("/")), 'days');
+        const totalAmount = totalDays * price
+        const car = carId
+        const booking = await bookCar({ fromSlot: new Date(fromSlot), toSlot: new Date(toSlot), totalDays, totalAmount, car })
+        if (booking)
+            router.push(`/confirmation/${booking.id}`)
     }
     return (
         <div className='flex justify-center flex-wrap'>

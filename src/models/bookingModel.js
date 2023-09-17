@@ -20,16 +20,12 @@ const bookingSchema = new mongoose.Schema(
       type: Date,
       required: true,
     },
-    totalHours: {
+    totalDays: {
       type: Number,
       required: true,
     },
     totalAmount: {
       type: Number,
-      required: true,
-    },
-    paymentId: {
-      type: String,
       required: true,
     },
     status: {
