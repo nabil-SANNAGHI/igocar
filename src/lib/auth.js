@@ -1,15 +1,8 @@
-import { jwtVerify } from "jose";
 import { connectDB } from "@/config/dbConfig";
+import { validateJWT } from "@/helpers/helpers";
 import User from "@/models/userModel";
 
 connectDB();
-export const validateJWT = async (jwt) => {
-    const { payload } = await jwtVerify(
-        jwt,
-        new TextEncoder().encode(process.env.jwt_secret)
-    );
-    return payload;
-};
 
 // Getting the JWT from cookies:
 export const getUserFromCookie = async (cookies) => {

@@ -1,4 +1,17 @@
-import { validateJWT } from "@/lib/auth";
+import { jwtVerify } from "jose";
+
+const validateJWT = async (jwt) => {
+    try {
+        const { payload } = await jwtVerify(
+            jwt,
+            new TextEncoder().encode(process.env.jwt_secret)
+        );
+        return payload;
+
+    } catch (error) {
+        return { _id: null }
+    }
+};
 
 function getImagePath(imageName) {
     return `/images/${imageName}`
@@ -19,5 +32,6 @@ const getFormattedDate = (date) => {
 export {
     getImagePath,
     getUserIdFromCookie,
-    getFormattedDate
+    getFormattedDate,
+    validateJWT
 }
