@@ -4,7 +4,6 @@ import { validateJWT } from './helpers/helpers';
 export async function middleware(request) {
   const publicRoute = ["/login", "/register", "/cars", "/"]
   const { pathname } = request.nextUrl;
-  console.log('pathname', pathname);
   const isPublicRoute = publicRoute.includes(pathname);
   if (isPublicRoute)
     return NextResponse.next()
@@ -24,9 +23,6 @@ export async function middleware(request) {
 }
 export const config = {
   matcher: [
-    '/((?!api|_next/*|favicon.ico).*)',
+    '/((?!api|_next/*|/images|favicon.ico).*)', "/_next/_image"
   ],
-  // matcher: [
-  //   '/profil/',
-  // ],
 }
