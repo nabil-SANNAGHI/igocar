@@ -17,22 +17,22 @@ export default function ProfilTabs({ isAdminUser }) {
     return (
         <ul className="flex justify-center gap-x-5 mb-5">
             <li className={activeElements.isProfil ? activeElementClass : normalElementClass}>
-                {activeElements.isProfil ? 'general' : <Link href={'/profil'}>general</Link>}
+                {activeElements.isProfil ? 'general' : <Link href={'/profil'}>général</Link>}
             </li>
             {
                 isAdminUser && <li className={activeElements.isCars ? activeElementClass : normalElementClass}>
-                    {activeElements.isCars ? 'Cars' : <Link href={'/profil/cars'}>Cars</Link>}
+                    {activeElements.isCars ? 'Cars' : <Link href={'/profil/cars'}>Voitures</Link>}
                 </li>
             }
 
             {
                 isAdminUser && <li className={activeElements.isUsers ? activeElementClass : normalElementClass}>
-                    {activeElements.isUsers ? 'Users' : <Link href={'/profil/users'}>Users</Link>}
+                    {activeElements.isUsers ? 'Users' : <Link href={'/profil/users'}>Utilisateurs</Link>}
                 </li>
             }
 
             <li className={activeElements.isBooking ? activeElementClass : normalElementClass}>
-                {activeElements.isBooking ? 'Booking' : <Link href={'/profil/booking'}>Booking</Link>}
+                {activeElements.isBooking ? 'Booking' : <Link href={'/profil/booking'}>Réservation</Link>}
             </li>
         </ul>
     )

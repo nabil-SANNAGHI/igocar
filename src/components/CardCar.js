@@ -11,7 +11,7 @@ export default function CardCar({ data }) {
             </div>
             <div className='flex justify-between gap-2 mb-2'>
                 <h5 className='text-xl font-semibold text-gray-700 dark:text-white'>{name}</h5>
-                <p className='font-semibold text-primary'>${rentPerDay}/day</p>
+                <p className='font-semibold text-primary'>{rentPerDay} MAD/day</p>
             </div>
             <div className='flex flex-wrap gap-y-2 mb-2'>
                 <div className='basis-1/2 pr-2 flex items-center'>
@@ -24,7 +24,7 @@ export default function CardCar({ data }) {
                     <span className='mr-2'>
                         <svg xmlns="http://www.w3.org/2000/svg" width="18" height="15" fill="none" viewBox="0 0 18 15"><path fill="#9333EA" d="M6.125 7.75c1.914 0 3.5-1.559 3.5-3.5 0-1.914-1.586-3.5-3.5-3.5a3.507 3.507 0 0 0-3.5 3.5 3.49 3.49 0 0 0 3.5 3.5Zm1.367 1.313H4.73C2.105 9.063 0 11.194 0 13.82c0 .52.41.93.93.93h10.363c.52 0 .957-.41.957-.93a4.761 4.761 0 0 0-4.758-4.758Zm5.606.437h-2.024a5.6 5.6 0 0 1 2.051 4.32c0 .356-.11.657-.273.93h3.773a.881.881 0 0 0 .875-.875c0-2.406-1.969-4.375-4.402-4.375Zm-1.286-1.75a3.075 3.075 0 0 0 3.063-3.063c0-1.667-1.395-3.062-3.063-3.062-.71 0-1.34.246-1.832.629.301.601.52 1.285.52 1.996 0 .984-.328 1.887-.875 2.598.547.574 1.313.902 2.188.902Z"></path></svg>
                     </span>
-                    <span className='text-gray-600 dark:text-gray-300'>{seatingCapacity} seatingCapacity</span>
+                    <span className='text-gray-600 dark:text-gray-300'>{seatingCapacity} capacité d'assise</span>
                 </div>
                 <div className='basis-1/2 pr-2 flex items-center'>
                     <span className='mr-2'>
@@ -44,7 +44,7 @@ export default function CardCar({ data }) {
             <div className='flex justify-center mt-10'>
                 <Link href={`/cars/${_id}`} className="relative flex h-11 w-full items-center justify-center px-6 before:absolute before:inset-0 before:rounded-full before:bg-primary before:transition before:duration-300 hover:before:scale-105 active:duration-75 active:before:scale-95 sm:w-max">
                     <span className="relative text-base font-semibold text-white"
-                    >Get started</span>
+                    >Commander</span>
                 </Link>
             </div>
         </div>

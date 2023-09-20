@@ -2,9 +2,9 @@ import { NextResponse } from 'next/server'
 import { validateJWT } from './helpers/helpers';
 
 export async function middleware(request) {
-  const token = request.cookies.get("token")?.value;
   const publicRoute = ["/login", "/register", "/cars", "/"]
   const { pathname } = request.nextUrl;
+  console.log('pathname', pathname);
   const isPublicRoute = publicRoute.includes(pathname);
   if (isPublicRoute)
     return NextResponse.next()
@@ -24,6 +24,9 @@ export async function middleware(request) {
 }
 export const config = {
   matcher: [
-    '/((?!api|_next/*|/images|favicon.ico).*)',
+    '/((?!api|_next/*|favicon.ico).*)',
   ],
+  // matcher: [
+  //   '/profil/',
+  // ],
 }

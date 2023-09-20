@@ -23,12 +23,12 @@ export default function ProfilCars() {
             <table className="table-fixed w-full border border-slate-400">
                 <thead>
                     <tr className='bg-gray-100'>
-                        <th className='border border-slate-300 text-left p-2'>Car Image</th>
-                        <th className='border border-slate-300 text-left p-2'>Car Name</th>
-                        <th className='border border-slate-300 text-left p-2'>Brand</th>
-                        <th className='border border-slate-300 text-left p-2'>Fuel Type</th>
-                        <th className='border border-slate-300 text-left p-2'>Price/day</th>
-                        <th className='border border-slate-300 text-left p-2'>Passengers</th>
+                        <th className='border border-slate-300 text-left p-2'>Image</th>
+                        <th className='border border-slate-300 text-left p-2'>Nom</th>
+                        <th className='border border-slate-300 text-left p-2'>Marque</th>
+                        <th className='border border-slate-300 text-left p-2'>Carburant</th>
+                        <th className='border border-slate-300 text-left p-2'>Prix/jour</th>
+                        <th className='border border-slate-300 text-left p-2'>Passagers</th>
                         <th className='border border-slate-300 text-left p-2'>Transmission</th>
                         <th className='border border-slate-300 text-left p-2'>Action</th>
                     </tr>

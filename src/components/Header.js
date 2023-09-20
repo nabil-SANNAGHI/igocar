@@ -43,22 +43,17 @@ export default async function Header() {
                                 <ul className="tracking-wide font-medium lg:text-sm flex-col flex lg:flex-row gap-6 lg:gap-0">
                                     <li>
                                         <Link href="/#features" className="block md:px-4 transition hover:text-primary">
-                                            <span>Features</span>
-                                        </Link>
-                                    </li>
-                                    <li>
-                                        <Link href="/#solution" className="block md:px-4 transition hover:text-primary">
-                                            <span>Solution</span>
+                                            <span>Fonctionnalités</span>
                                         </Link>
                                     </li>
                                     <li>
                                         <Link href="/#testimonials" className="block md:px-4 transition hover:text-primary">
-                                            <span>Testimonials</span>
+                                            <span>Témoignages</span>
                                         </Link>
                                     </li>
                                     <li>
                                         <Link href="/cars" className="block md:px-4 transition hover:text-primary">
-                                            <span>cars</span>
+                                            <span>Voitures</span>
                                         </Link>
                                     </li>
                                 </ul>

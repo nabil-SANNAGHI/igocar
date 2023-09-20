@@ -34,9 +34,9 @@ export default function ProfilCar({ carData, updateDataAction }) {
         {transmission}
       </td>
       <td className='border border-slate-300 text-left p-2'>
-        <div className="flex gap-2">
-          <Link href={`/profil/cars/editCar/${carData._id}`} className='text-primary font-semibold hover:underline'>edit</Link>
-          <button className='text-secondary font-semibold hover:underline' onClick={handleDelete}>delete</button>
+        <div className="flex flex-wrap ">
+          <Link href={`/profil/cars/editCar/${carData._id}`} className='text-primary flex-100 font-semibold hover:underline'>Modifier</Link>
+          <button className='text-secondary font-semibold hover:underline' onClick={handleDelete}>Supprimer</button>
         </div>
       </td>
     </tr>

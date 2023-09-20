@@ -30,7 +30,7 @@ export default function ProfilBooking({ bookingData }) {
                 {totalAmount / totalDays}
             </td>
             <td className='border border-slate-300 text-left p-2'>
-                {totalAmount}$
+                {totalAmount} MAD
             </td>
             <td className='border border-slate-300 text-left p-2'>
                 {status}

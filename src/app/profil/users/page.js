@@ -9,11 +9,11 @@ export default async function ProfilUsers() {
             <table className="table-fixed w-full border border-slate-400">
                 <thead>
                     <tr className='bg-gray-100'>
-                        <th className='border border-slate-300 text-left p-2'>name</th>
-                        <th className='border border-slate-300 text-left p-2'>email</th>
-                        <th className='border border-slate-300 text-left p-2'>created At</th>
-                        <th className='border border-slate-300 text-left p-2'>updated At</th>
-                        <th className='border border-slate-300 text-left p-2'>status</th>
+                        <th className='border border-slate-300 text-left p-2'>Nom</th>
+                        <th className='border border-slate-300 text-left p-2'>Email</th>
+                        <th className='border border-slate-300 text-left p-2'>Créé le</th>
+                        <th className='border border-slate-300 text-left p-2'>Mis à jour le</th>
+                        <th className='border border-slate-300 text-left p-2'>statut</th>
                     </tr>
                 </thead>
                 <tbody>

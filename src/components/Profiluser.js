@@ -17,7 +17,7 @@ export default function ProfilCar({ userData }) {
                 {getFormattedDate(updatedAt)}
             </td>
             <td className='border border-slate-300 text-left p-2'>
-                {isActive === true ? "active" : "unActive"}
+                {isActive === true ? "Active" : "Inactive"}
             </td>
         </tr>
     )
