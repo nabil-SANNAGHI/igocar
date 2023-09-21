@@ -8,7 +8,7 @@ export default function Testimonials() {
             <Container>
                 <div className="mb-20 space-y-4 px-6 md:px-0">
                     <h2 className="text-center text-2xl font-bold text-gray-800 dark:text-white md:text-4xl">
-                        We have some fanss.
+                        Nous avons des fans.
                     </h2>
                 </div>
                 <div className="md:columns-2 lg:columns-3 gap-8 space-y-8">
@@ -20,7 +20,7 @@ export default function Testimonials() {
                                 <p className="text-sm text-gray-500 dark:text-gray-300">Mobile dev</p>
                             </div>
                         </div>
-                        <p className="mt-8">Lorem ipsum dolor sit amet consectetur adipisicing elit. Illum aliquid quo eum quae quos illo earum ipsa doloribus nostrum minus libero aspernatur laborum cum, a suscipit, ratione ea totam ullam! Lorem ipsum dolor sit amet consectetur, adipisicing elit. Architecto laboriosam deleniti aperiam ab veniam sint non cumque quis tempore cupiditate. Sint libero voluptas veniam at reprehenderit, veritatis harum et rerum.</p>
+                        <p className="mt-8">Un service exceptionnel ! La voiture était en parfait état et le processus de réservation était simple et rapide. Je recommande vivement iGo Car.</p>
                     </div>
                     <div className="aspect-auto p-8 border border-gray-100 rounded-3xl bg-white dark:bg-gray-800 dark:border-gray-700 shadow-2xl shadow-gray-600/10 dark:shadow-none">
                         <div className="flex gap-4">
@@ -30,7 +30,7 @@ export default function Testimonials() {
                                 <p className="text-sm text-gray-500 dark:text-gray-300">Marketing</p>
                             </div>
                         </div>
-                        <p className="mt-8"> Lorem ipsum dolor laboriosam deleniti aperiam ab veniam sint non cumque quis tempore cupiditate. Sint libero voluptas veniam at reprehenderit, veritatis harum et rerum.</p>
+                        <p className="mt-8"> J'ai adoré mon expérience avec iGo Car. Les véhicules sont impeccables et le personnel est très professionnel. Je réserverai à nouveau sans hésitation.</p>
                     </div>
                     <div className="aspect-auto p-8 border border-gray-100 rounded-3xl bg-white dark:bg-gray-800 dark:border-gray-700 shadow-2xl shadow-gray-600/10 dark:shadow-none">
                         <div className="flex gap-4">
@@ -40,7 +40,7 @@ export default function Testimonials() {
                                 <p className="text-sm text-gray-500 dark:text-gray-300">Developer</p>
                             </div>
                         </div>
-                        <p className="mt-8">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Architecto laboriosam deleniti aperiam ab veniam sint non cumque quis tempore cupiditate. Sint libero voluptas veniam at reprehenderit, veritatis harum et rerum.</p>
+                        <p className="mt-8">Le choix de voitures est incroyable, et les prix sont très compétitifs. C'était un plaisir de louer chez iGo Car.</p>
                     </div>
                     <div className="aspect-auto p-8 border border-gray-100 rounded-3xl bg-white dark:bg-gray-800 dark:border-gray-700 shadow-2xl shadow-gray-600/10 dark:shadow-none">
                         <div className="flex gap-4">
@@ -50,7 +50,7 @@ export default function Testimonials() {
                                 <p className="text-sm text-gray-500 dark:text-gray-300">Mobile dev</p>
                             </div>
                         </div>
-                        <p className="mt-8">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Architecto laboriosam deleniti aperiam ab veniam sint non cumque quis tempore cupiditate. Sint libero voluptas veniam at reprehenderit, veritatis harum et rerum.</p>
+                        <p className="mt-8">Le service clientèle est impeccable. J'ai eu une urgence pendant mon voyage et l'équipe d'iGo Car a été extrêmement serviable et réactive.</p>
                     </div>
                     <div className="aspect-auto p-8 border border-gray-100 rounded-3xl bg-white dark:bg-gray-800 dark:border-gray-700 shadow-2xl shadow-gray-600/10 dark:shadow-none">
                         <div className="flex gap-4">
@@ -60,7 +60,7 @@ export default function Testimonials() {
                                 <p className="text-sm text-gray-500 dark:text-gray-300">Manager</p>
                             </div>
                         </div>
-                        <p className="mt-8"> Lorem ipsum dolor sit amet consectetur, adipisicing elit. Architecto laboriosam deleniti aperiam ab veniam sint non cumque quis tempore cupiditate. Sint libero voluptas veniam at reprehenderit, veritatis harum et rerum.</p>
+                        <p className="mt-8"> Les voitures iGo sont tout simplement géniales. J'ai eu une conduite confortable et sans souci tout au long de mon voyage. Merci pour cette expérience mémorable !</p>
                     </div>
                     <div className="aspect-auto p-8 border border-gray-100 rounded-3xl bg-white dark:bg-gray-800 dark:border-gray-700 shadow-2xl shadow-gray-600/10 dark:shadow-none">
                         <div className="flex gap-4">
@@ -70,7 +70,7 @@ export default function Testimonials() {
                                 <p className="text-sm text-gray-500 dark:text-gray-300">Mobile dev</p>
                             </div>
                         </div>
-                        <p className="mt-8">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Architecto laboriosam deleniti aperiam ab veniam sint non cumque quis tempore cupiditate. Sint libero voluptas veniam at reprehenderit, veritatis harum et rerum.</p>
+                        <p className="mt-8">Je suis un client fidèle d'iGo Car depuis des années, et ils ne cessent de me surprendre par leur qualité de service. Je ne louerais nulle part ailleurs.</p>
                     </div>
 
                 </div>

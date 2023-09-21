@@ -10,18 +10,24 @@ const initialValue = {
 }
 function Login() {
   const [formState, setFormState] = useState(initialValue)
+  const [errors, setErrors] = useState('')
   const router = useRouter()
 
   async function handelSubmit(event) {
     event.preventDefault();
-    const res = await login(formState)
-    router.replace("/");
-    router.refresh()
+    try {
+      await login(formState)
+      router.replace("/");
+      router.refresh()
+    } catch (error) {
+      setErrors(error.message)
+    }
   }
   return (
     <section className="min-h-screen flex flex-col pt-20">
       <div className="flex flex-1 items-center justify-center">
         <div className="rounded-lg sm:border-2 px-4 lg:px-24 py-16 lg:max-w-xl sm:max-w-md w-full text-center">
+          <p className='text-secondary'>{errors}</p>
           <form className="text-center" onSubmit={handelSubmit}>
             <h1 className="font-bold tracking-wider text-3xl mb-8 w-full text-gray-600">
               Se connecter

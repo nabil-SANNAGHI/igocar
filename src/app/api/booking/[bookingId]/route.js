@@ -23,7 +23,7 @@ export async function DELETE(request, { params }) {
 export async function PUT(request, { params }) {
     try {
         const reqBody = await request.json();
-        await Car.findByIdAndUpdate(params.carId, reqBody);
+        const res = await Booking.findByIdAndUpdate(params.bookingId, reqBody, { new: true });
         return NextResponse.json({ message: "car updated successfully" });
     } catch (error) {
         return NextResponse.json({ message: error.message }, { status: 400 });

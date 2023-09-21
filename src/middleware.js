@@ -13,7 +13,6 @@ export async function middleware(request) {
       return NextResponse.redirect(new URL("/login", request.url));
     else {
       const isValidToken = await validateJWT(token)
-      console.log('isValidToken', isValidToken);
       if (isValidToken._id == null) {
         request.cookies.delete("token")
         return NextResponse.redirect(new URL("/login", request.url));
@@ -23,7 +22,6 @@ export async function middleware(request) {
 }
 export const config = {
   matcher: [
-    // '/((?!api|_next/*|favicon.ico).*)',
-    '/confirmation/:path*', '/profil/:path*'
+    '/confirmation/:path*', '/profil/:path*', '/cars/:path*'
   ],
 }

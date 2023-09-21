@@ -1,5 +1,6 @@
 import { getFormattedDate } from '@/helpers/helpers'
 import React from 'react'
+import SelectActive from './SelectActive'
 export default function ProfilCar({ userData }) {
     const { name, email, createdAt, updatedAt, isActive } = userData
     return (
@@ -17,7 +18,9 @@ export default function ProfilCar({ userData }) {
                 {getFormattedDate(updatedAt)}
             </td>
             <td className='border border-slate-300 text-left p-2'>
-                {isActive === true ? "Active" : "Inactive"}
+
+                {/* {isActive === true ? "Active" : "Inactive"} */}
+                <SelectActive userId={userData._id} isActive={userData.isActive} />
             </td>
         </tr>
     )

@@ -11,10 +11,9 @@ export default function Features() {
                     </svg>
 
                     <h2 className="my-8 text-2xl font-bold text-gray-700 dark:text-white md:text-4xl">
-                        A technology-first approach to payments
-                        and finance
+                        Explorez Nos Principales Fonctionnalités
                     </h2>
-                    <p className="text-gray-600 dark:text-gray-300">Lorem ipsum dolor sit amet consectetur adipisicing elit. Natus ad ipsum pariatur autem, fugit laborum in atque amet obcaecati? Nisi minima aspernatur, quidem nulla cupiditate nam consequatur eligendi magni adipisci.</p>
+                    <p className="text-gray-600 dark:text-gray-300">Découvrez nos fonctionnalités de location de voiture : réservation en ligne facile, prise en charge à distance, paiement sécurisé, et bien plus encore. Simplifiez votre voyage avec iGo Car.</p>
                 </div>
                 <div
                     className="mt-16 grid divide-x divide-y divide-gray-100 dark:divide-gray-700 overflow-hidden rounded-3xl border border-gray-100 text-gray-600 dark:border-gray-700 sm:grid-cols-2 lg:grid-cols-4 lg:divide-y-0 xl:grid-cols-4"
@@ -33,10 +32,10 @@ export default function Features() {
                                 <h5
                                     className="text-xl font-semibold text-gray-700 dark:text-white transition group-hover:text-secondary"
                                 >
-                                    First feature
+                                    Réservation en ligne
                                 </h5>
                                 <p className="text-gray-600 dark:text-gray-300">
-                                    Neque Dolor, fugiat non cum doloribus aperiam voluptates nostrum.
+                                    Expérimentez la commodité et l'autonomisation des réservations en ligne sans couture dès aujourd'hui.
                                 </p>
                             </div>
                         </div>
@@ -55,10 +54,10 @@ export default function Features() {
                                 <h5
                                     className="text-xl font-semibold text-gray-700 dark:text-white transition group-hover:text-secondary"
                                 >
-                                    Second feature
+                                    Pas de frais cachés
                                 </h5>
                                 <p className="text-gray-600 dark:text-gray-300">
-                                    Neque Dolor, fugiat non cum doloribus aperiam voluptates nostrum.
+                                    Sachez exactement ce que vous payez.
                                 </p>
                             </div>
                         </div>
@@ -77,10 +76,10 @@ export default function Features() {
                                 <h5
                                     className="text-xl font-semibold text-gray-700 dark:text-white transition group-hover:text-secondary"
                                 >
-                                    Third feature
+                                    Nous alignons nos tarifs
                                 </h5>
                                 <p className="text-gray-600 dark:text-gray-300">
-                                    Neque Dolor, fugiat non cum doloribus aperiam voluptates nostrum.
+                                    Vous avez trouvé la même offre pour moins cher ? Nous ajusterons notre tarif en conséquence.
                                 </p>
                             </div>
                         </div>
@@ -103,10 +102,10 @@ export default function Features() {
                                 <h5
                                     className="text-xl font-semibold text-gray-700 dark:text-white transition group-hover:text-secondary"
                                 >
-                                    More features
+                                    Locations flexibles
                                 </h5>
                                 <p className="text-gray-600 dark:text-gray-300">
-                                    Neque Dolor, fugiat non cum doloribus aperiam voluptates nostrum.
+                                    Vous pouvez annuler ou modifier la plupart des réservations gratuitement jusqu’à 48 heures avant la prise en charge du véhicule.
                                 </p>
                             </div>
                         </div>

@@ -1,17 +1,14 @@
 import moment from 'moment'
 import React from 'react'
+import SelectbookingStatus from './SelectbookingStatus'
+import { getUserFromCookie } from '@/lib/auth'
+import { cookies } from 'next/headers'
 
-export default function ProfilBooking({ bookingData }) {
-    // {
-    //     carName: 'dacia duster',
-    //     fromSlot: '03/09/2023',
-    //     toSlot: '10/09/2023',
-    //     totalDays: 7,
-    //     dayPrice: 56,
-    //     totalPaid: 7 * 56,
-    //     status: 'approved'
-    // }
+export default async function ProfilBooking({ bookingData }) {
+    const user = await getUserFromCookie(cookies())
+    const isAdminUser = user?.isAdmin
     const { _id, fromSlot, toSlot, totalDays, totalAmount, status } = bookingData
+    const currentStatus = (status == "approved" ? "Approuvé" : status == "rejected" ? "Rejeté" : "En attente")
     return (
         <tr>
             <td className='border border-slate-300 text-left p-2 overflow-hidden'>
@@ -33,7 +30,12 @@ export default function ProfilBooking({ bookingData }) {
                 {totalAmount} MAD
             </td>
             <td className='border border-slate-300 text-left p-2'>
-                {status}
+                {
+                    isAdminUser ?
+                        <SelectbookingStatus status={status} bookingId={_id} /> :
+                        currentStatus
+
+                }
             </td>
         </tr>
     )

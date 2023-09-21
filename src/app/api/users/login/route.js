@@ -14,18 +14,18 @@ export async function POST(request) {
 
         // check if user exist 
         if (!user) {
-            throw new Error("User not found");
+            throw new Error("Utilisateur non trouvé");
         }
 
         // check if user is active
         if (!user.isActive) {
-            throw new Error("User is inactive , please contact admin");
+            throw new Error("L'utilisateur est inactif, veuillez contacter l'administrateur");
         }
 
         // check if password is correct
         const validPassword = await bcrypt.compare(reqBody.password, user.password);
         if (!validPassword) {
-            throw new Error("Invalid password");
+            throw new Error("Mot de passe invalide");
         }
 
         const response = NextResponse.json({

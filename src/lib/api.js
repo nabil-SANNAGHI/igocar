@@ -7,6 +7,10 @@ const fetcher = async ({ url, method, body = false, json = true }) => {
             'Content-Type': 'application/json',
         }
     })
+    if (res.status === 400) {
+        const data = await res.json();
+        throw new Error(data.message)
+    }
     if (!res.ok) {
         throw new Error("something went wrong")
     }
@@ -128,6 +132,15 @@ export const bookings = async (userId) => {
     return fetcher({
         url: `${process.env.NEXT_PUBLIC_domain}api/booking/?user=${userId}`,
         method: "GET",
+        json: true
+    })
+}
+export const updateBookinStatus = async (status, id) => {
+
+    return fetcher({
+        url: `/api/booking/${id}`,
+        method: "PUT",
+        body: status,
         json: true
     })
 }
