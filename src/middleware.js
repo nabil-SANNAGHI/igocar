@@ -23,6 +23,7 @@ export async function middleware(request) {
 }
 export const config = {
   matcher: [
-    '/((?!api|_next/*|favicon.ico).*)'
+    // '/((?!api|_next/*|favicon.ico).*)',
+    '/confirmation/:path*', '/profil/:path*'
   ],
 }
