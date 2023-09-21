@@ -1,11 +1,18 @@
+'use client'
 import React from 'react'
 import Container from './Container'
 import CardCar from './CardCar'
 import { getCars } from '@/lib/api'
-export default async function PopularCars() {
-    const getCarsData = await getCars()
-    const cars = getCarsData.data
+export default function PopularCars() {
+    const [carsData, setCarsData] = useState([])
+    useEffect(() => {
+        async function getdata() {
+            const data = await getCars(3);
+            setCarsData(data.data)
+        }
 
+        getdata();
+    }, [])
     return (
         <div id="popularCars">
             <Container>
@@ -15,7 +22,7 @@ export default async function PopularCars() {
                     </h2>
                 </div>
                 <div className='grid gap-5 lg:grid-cols-3 md:grid-cols-2'>
-                    {cars.map((car, key) => <CardCar data={car} key={key}></CardCar>)}
+                    {carsData.map((car, key) => <CardCar data={car} key={key}></CardCar>)}
                 </div>
             </Container>
         </div>

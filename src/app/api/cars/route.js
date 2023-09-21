@@ -3,7 +3,7 @@ import { getUserFromCookie } from "@/lib/auth";
 import Car from "@/models/carModel";
 import { NextResponse } from "next/server";
 import { cookies } from 'next/headers'
-// connectDB();
+connectDB();
 
 export async function POST(request) {
     try {
@@ -22,9 +22,16 @@ export async function POST(request) {
     }
 }
 
-export async function GET() {
+export async function GET(request) {
     try {
-        const cars = await Car.find();
+        const { searchParams } = new URL(request.url);
+        const max = searchParams.get("max");
+        let cars
+        if (max !== "null") {
+            cars = await Car.find().limit(max)
+        } else {
+            cars = await Car.find()
+        }
         return NextResponse.json({ data: cars });
     } catch (error) {
         return NextResponse.json({ message: error.message }, { status: 400 });

@@ -55,9 +55,9 @@ export const addCar = async (car) => {
     })
 }
 
-export const getCars = async () => {
+export const getCars = async (max = null) => {
     return fetcher({
-        url: `${process.env.NEXT_PUBLIC_domain}api/cars`,
+        url: `${process.env.NEXT_PUBLIC_domain}api/cars/?max=${max}`,
         method: "GET",
         json: true
     })

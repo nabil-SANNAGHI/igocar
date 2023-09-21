@@ -1,9 +1,7 @@
 'use client'
 import React, { useEffect, useState } from 'react'
 import ProfilCar from '@/components/ProfilCar'
-// import carsData from '@/helpers/data'
 import AddNewCar from '@/components/AddNewCar'
-import CarNewEdit from '@/components/CarNewEdit'
 import { getCars } from '@/lib/api'
 export default function ProfilCars() {
     const [carsData, setCarsData] = useState([])
